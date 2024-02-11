@@ -1,0 +1,27 @@
+{
+  "name": "developer-kit",
+  "version": "0.0.0",
+  "description": "A developer kit for web development",
+  "homepage": "https://github.com/arnaufugarolas/developer-kit#readme",
+  "bugs": {
+    "url": "https://github.com/arnaufugarolas/developer-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaufugarolas/developer-kit.git"
+  },
+  "license": "See LICENSE.md",
+  "author": "th30c05",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "sort": "yarn dlx sort-package-json \"packages/*/package.json\" \"package.json\""
+  },
+  "devDependencies": {
+    "@developer-kit/prettier-config": "*",
+    "@types/node": "^20.11.17",
+    "lerna": "^8.1.2",
+    "prettier": "^3.2.5"
+  }
+}

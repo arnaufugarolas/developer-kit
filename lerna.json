@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "command": {
+    "publish": {
+      "message": "build(release): publish [skip ci]",
+      "npmClient": "yarn"
+    }
+  },
+  "conventionalCommits": true,
+  "npmClient": "yarn",
+  "packages": ["packages/*"],
+  "parallel": true,
+  "signGitCommit": true,
+  "signGitTag": true,
+  "sort": true,
+  "version": "independent"
+}
