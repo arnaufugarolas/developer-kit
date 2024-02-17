@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./"
+  },
+  "exclude": ["node_modules", "dist", "types"],
+  "extends": "@developer-kit/typescript-config/tsconfig.json",
+  "include": ["packages"]
+}

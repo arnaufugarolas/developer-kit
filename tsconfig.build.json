@@ -1,0 +1,15 @@
+{
+  "exclude": [
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/__tests?__",
+    "dist"
+  ],
+  "include": [
+    "hl.ts"
+  ],
+  "extends": [
+    "./tsconfig.json",
+    "@developer-kit/typescript-config/tsconfig.build.json"
+  ]
+}

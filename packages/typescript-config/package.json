@@ -1,0 +1,27 @@
+{
+  "name": "@developer-kit/typescript-config",
+  "version": "0.0.0",
+  "description": "Typescript configuration for developer-kit",
+  "homepage": "https://github.com/arnaufugarolas/developer-kit#readme",
+  "bugs": {
+    "url": "https://github.com/arnaufugarolas/developer-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaufugarolas/developer-kit.git",
+    "directory": "packages/typescript-config"
+  },
+  "license": "See LICENSE.md",
+  "author": "th30c05",
+  "files": [
+    "./tsconfig.json",
+    "./tsconfig.build.json"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
