@@ -52,5 +52,9 @@
   "peerDependencies": {
     "eslint": "^8.0.0",
     "prettier": "^3.2.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
