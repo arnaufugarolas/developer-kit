@@ -1,6 +1,6 @@
 {
   "name": "@developer-kit/prettier-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prettier configuration for developer-kit",
   "homepage": "https://github.com/arnaufugarolas/developer-kit#readme",
   "bugs": {
