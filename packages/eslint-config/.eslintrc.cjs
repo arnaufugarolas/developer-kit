@@ -14,7 +14,6 @@ module.exports = {
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
     'plugin:node/recommended-module',
-    'plugin:diff/diff',
     'plugin:optimize-regex/all',
     'plugin:security/recommended-legacy',
     'plugin:no-unsanitized/DOM',
@@ -141,6 +140,7 @@ module.exports = {
     'import/no-duplicates': 'error',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
+    'sort-imports': 'off',
     'sort-keys-fix/sort-keys-fix': 'warn',
   },
 }
