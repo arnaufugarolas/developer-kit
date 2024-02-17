@@ -1,5 +1,7 @@
+'use strict'
+
 /** @type {import("prettier").Config} */
-const config = {
+module.exports = {
   arrowParens: 'always',
   bracketSameLine: false,
   bracketSpacing: true,
@@ -11,7 +13,7 @@ const config = {
   printWidth: 100,
   proseWrap: 'preserve',
   quoteProps: 'consistent',
-  rangeEnd: Infinity,
+  rangeEnd: Number.POSITIVE_INFINITY,
   rangeStart: 0,
   requirePragma: false,
   semi: false,
@@ -22,5 +24,3 @@ const config = {
   useTabs: false,
   vueIndentScriptAndStyle: false,
 }
-
-module.exports = config

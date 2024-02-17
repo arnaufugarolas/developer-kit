@@ -13,7 +13,7 @@
   },
   "license": "See LICENSE.md",
   "author": "th30c05",
-  "main": "./prettier.config.js",
+  "main": "./prettier.config.cjs",
   "peerDependencies": {
     "prettier": "^3.0.0"
   },
