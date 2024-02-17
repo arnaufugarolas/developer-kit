@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/eslint-config@0.1.1...@developer-kit/eslint-config@0.1.2) (2024-02-17)
+
+### Bug Fixes
+
+- minor fixes ([105882e](https://github.com/arnaufugarolas/developer-kit/commit/105882e9f5a3505da6d26b6d6b126aa7b8a00b54))
+
 ## [0.1.1](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/eslint-config@0.1.0...@developer-kit/eslint-config@0.1.1) (2024-02-17)
 
 **Note:** Version bump only for package @developer-kit/eslint-config
