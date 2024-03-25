@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/typescript-config@0.2.0...@developer-kit/typescript-config@0.2.1) (2024-03-25)
+
+### Bug Fixes
+
+- minor fixes ([614b0a6](https://github.com/arnaufugarolas/developer-kit/commit/614b0a6ce8d51626854001be169c56dcde56110f))
+
 # [0.2.0](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/typescript-config@0.1.0...@developer-kit/typescript-config@0.2.0) (2024-03-25)
 
 ### Features
