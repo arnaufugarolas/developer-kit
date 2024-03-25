@@ -50,7 +50,7 @@ module.exports = {
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
       ],
-      files: ['**/*.(t|j)sx'],
+      files: ['**/*.tsx', '**/*.jsx'],
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
@@ -59,12 +59,22 @@ module.exports = {
       },
       plugins: ['react', 'react-redux', 'react-hooks', 'jsx-a11y'],
       rules: {
+        'react/function-component-definition': [
+          'error',
+          { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' },
+        ],
+        'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
+        'react/jsx-indent': 'off',
+        'react/jsx-indent-props': 'off',
+        'react/jsx-max-depth': ['error', { max: 3 }],
+        'react/jsx-no-bind': 'off',
+        'react/jsx-one-expression-per-line': 'off',
         'react/prop-types': 'off',
         'unicorn/filename-case': ['error', { case: 'pascalCase' }],
       },
       settings: {
         react: {
-          version: 'latest',
+          version: 'detect',
         },
       },
     },
@@ -119,7 +129,7 @@ module.exports = {
         'plugin:jest-formatting/strict',
         'plugin:testing-library/react',
       ],
-      files: ['**/*.test.*', '**/*.spec.*', '**/__tests?__/**'],
+      files: ['**/*.test.*', '**/*.spec.*', '**/__tests__/**', '**/__test__/**'],
       plugins: ['jest', 'jest-async', 'jest-dom'],
       rules: {
         'jest-async/expect-return': 'error',
