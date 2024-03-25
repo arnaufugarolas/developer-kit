@@ -8,7 +8,9 @@
   },
   "conventionalCommits": true,
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "parallel": true,
   "signGitCommit": true,
   "signGitTag": true,

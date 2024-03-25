@@ -22,6 +22,12 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['**/*.d.ts'],
+      rules: {
+        'pii/no-dob': 'off',
+      },
+    },
+    {
       extends: [
         'plugin:github/typescript',
         'plugin:@typescript-eslint/recommended-type-checked',
@@ -54,6 +60,7 @@ module.exports = {
       plugins: ['react', 'react-redux', 'react-hooks', 'jsx-a11y'],
       rules: {
         'react/prop-types': 'off',
+        'unicorn/filename-case': ['error', { case: 'pascalCase' }],
       },
       settings: {
         react: {
@@ -71,6 +78,13 @@ module.exports = {
       files: ['**/*.md'],
       plugins: ['markdown'],
       processor: 'markdown/markdown',
+      rules: {
+        'no-console': 'off',
+        'no-process-exit': 'off',
+        'no-undef': 'off',
+        'no-unused-vars': 'off',
+        'unicorn/filename-case': 'off',
+      },
     },
     {
       files: ['**/*.json'],
@@ -111,12 +125,6 @@ module.exports = {
         'jest-async/expect-return': 'error',
       },
     },
-    {
-      files: ['**/*.config.*', '**/.*rc.*', '**/.*rc'],
-      rules: {
-        'filenames/match-regex': 'off',
-      },
-    },
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -135,9 +143,12 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
     'capitalized-comments': 'off',
+    'filenames/match-regex': 'off',
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
+    'node/no-unpublished-import': 'off',
+    'node/no-unpublished-require': 'off',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
     'sort-imports': 'off',

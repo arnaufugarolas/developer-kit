@@ -16,20 +16,20 @@
     "packages/*"
   ],
   "scripts": {
-    "sort": "yarn dlx sort-package-json \"packages/*/package.json\" \"package.json\"",
     "format": "prettier --write \"**/*.{cjs,js,json,jsx,md,mjs,ts,tsx}\"",
     "format:check": "prettier --check \"**/*.{cjs,js,json,jsx,md,mjs,ts,tsx}\"",
     "lint": "eslint --ext cjs,html,js,json,jsx,md,mjs,ts,tsx,yaml,yml .",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "sort": "yarn dlx sort-package-json \"packages/*/package.json\" \"package.json\""
   },
   "devDependencies": {
     "@developer-kit/eslint-config": "*",
     "@developer-kit/prettier-config": "*",
     "@developer-kit/typescript-config": "*",
-    "@types/node": "^20.11.19",
-    "eslint": "^8.56.0",
+    "@types/node": "^20.11.30",
+    "eslint": "^8.57.0",
     "lerna": "^8.1.2",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   }
 }
