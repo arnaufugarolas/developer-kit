@@ -151,6 +151,7 @@ module.exports = {
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
+    'no-plusplus': 'off',
     'node/no-unpublished-import': 'off',
     'node/no-unpublished-require': 'off',
     'simple-import-sort/exports': 'error',
