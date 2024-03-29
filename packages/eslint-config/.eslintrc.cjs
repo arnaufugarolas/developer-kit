@@ -17,16 +17,9 @@ module.exports = {
     'plugin:optimize-regex/all',
     'plugin:security/recommended-legacy',
     'plugin:no-unsanitized/DOM',
-    'plugin:pii/recommended',
     'plugin:xss/recommended',
   ],
   overrides: [
-    {
-      files: ['**/*.d.ts'],
-      rules: {
-        'pii/no-dob': 'off',
-      },
-    },
     {
       extends: [
         'plugin:github/typescript',
@@ -38,7 +31,9 @@ module.exports = {
         project: './tsconfig.json',
       },
       rules: {
+        'import/no-unresolved': 'off',
         'no-undef': 'off',
+        'node/no-missing-import': 'off',
       },
     },
     {
@@ -142,7 +137,6 @@ module.exports = {
     'github',
     'sonarjs',
     'unicorn',
-    'pii',
     'no-secrets',
     'no-unsanitized',
     'xss',
