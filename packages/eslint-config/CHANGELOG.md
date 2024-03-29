@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/eslint-config@0.2.1...@developer-kit/eslint-config@0.2.2) (2024-03-29)
+
+### Bug Fixes
+
+- remove pii ([8f9b319](https://github.com/arnaufugarolas/developer-kit/commit/8f9b3199f9bee91d0141c1cfd17c1c14d762db50))
+- remove rule ([5a1175f](https://github.com/arnaufugarolas/developer-kit/commit/5a1175ffb4b8e898b1bf21c2de848e457a2b7224))
+
 ## [0.2.1](https://github.com/arnaufugarolas/developer-kit/compare/@developer-kit/eslint-config@0.2.0...@developer-kit/eslint-config@0.2.1) (2024-03-25)
 
 ### Bug Fixes
