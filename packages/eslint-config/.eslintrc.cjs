@@ -1,6 +1,6 @@
 'use strict'
 
-/** @type {import("eslint").Config} */
+/** @type {import('eslint').Config} */
 module.exports = {
   env: {
     browser: true,
@@ -26,7 +26,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
       ],
-      files: ['**/*.ts'],
+      files: ['**/*.ts', '**/*.tsx'],
       parserOptions: {
         project: './tsconfig.json',
       },
@@ -56,7 +56,10 @@ module.exports = {
       rules: {
         'react/function-component-definition': [
           'error',
-          { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' },
+          {
+            namedComponents: 'arrow-function',
+            unnamedComponents: 'arrow-function',
+          },
         ],
         'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
         'react/jsx-indent': 'off',
@@ -78,6 +81,9 @@ module.exports = {
       files: ['**/*.html'],
       parser: '@html-eslint/parser',
       plugins: ['@html-eslint', 'html'],
+      rules: {
+        'prettier/prettier': 'off',
+      },
     },
     {
       files: ['**/*.md'],
@@ -127,7 +133,9 @@ module.exports = {
       files: ['**/*.test.*', '**/*.spec.*', '**/__tests__/**', '**/__test__/**'],
       plugins: ['jest', 'jest-async', 'jest-dom'],
       rules: {
+        'i18n-text/no-en': 'off',
         'jest-async/expect-return': 'error',
+        'no-magic-numbers': 'off',
       },
     },
   ],
@@ -151,6 +159,16 @@ module.exports = {
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
+    'init-declarations': 'off',
+    'no-magic-numbers': [
+      'error',
+      {
+        ignore: [0, 1, -1],
+        ignoreArrayIndexes: true,
+        ignoreClassFieldInitialValues: true,
+        ignoreDefaultValues: true,
+      },
+    ],
     'no-plusplus': 'off',
     'node/no-unpublished-import': 'off',
     'node/no-unpublished-require': 'off',
