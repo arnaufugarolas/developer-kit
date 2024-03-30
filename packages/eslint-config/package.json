@@ -1,6 +1,6 @@
 {
   "name": "@developer-kit/eslint-config",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Eslint configuration for developer-kit",
   "homepage": "https://github.com/arnaufugarolas/developer-kit#readme",
   "bugs": {
